@@ -52,14 +52,14 @@ public class Start {
             String ability = sc.nextLine();
 
             System.out.println("Por favor ingresa la edad del pokemon " + (i + 1));
-            int age = sc.nextInt();
+            int age = Integer.parseInt(sc.nextLine());
 
             for (int j = 0; j < controller.getTypes().length; j++) {
                 System.out.println((j) + ". " + controller.getTypes()[j]);
             }
 
             System.out.println("Por favor ingresa el numero del tipo del pokemon " + (i + 1));
-            int typeIndex = sc.nextInt();
+            int typeIndex = Integer.parseInt(sc.nextLine());
 
             String type = controller.getTypes()[typeIndex];
 
